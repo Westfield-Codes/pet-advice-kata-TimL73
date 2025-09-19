@@ -3,6 +3,9 @@
 /* Var, Prompt, Confirm, Alert, Compound Conditional */
 
 // Create pet variable, set equal to empty quotes ("")
+var cute = confirm(" do you want a cute pet? ");
+if (cute = true) alert(" try a hampster");
+else alert(" try a rat ");
 // Ask if they are allergic, store in a boolean variable with OK/Cancel
 // If they are allergic, ask if they want a cute pet, store in a boolean variable with OK/Cancel
 // If they are not allergic, ask if they want to be outdoors with their pet.  Store it in a boolean with OK/Cancel.
