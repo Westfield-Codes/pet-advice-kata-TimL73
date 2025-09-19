@@ -3,16 +3,16 @@
 /* Var, Prompt, Confirm, Alert, Compound Conditional */
 
 // Create pet variable, set equal to empty quotes ("")
-var pet = "";
-// Ask if they are allergic, store in a boolean variable with OK/Cancel
-var allergic = confirm("are you allergic to fur?");
-if(allergic == true) pet = "fish";
-else pet = "Dog";
-var active = confirm("would you like a active pet");
-if (active == true && allergic == false) pet = "dog";
-else if (active == false && allergic == false) pet = "cat";
-else pet = "fish";
-alert("try a " + pet);
+// var pet = "";
+// // Ask if they are allergic, store in a boolean variable with OK/Cancel
+// var allergic = confirm("are you allergic to fur?");
+// if(allergic == true) pet = "fish";
+// else pet = "Dog";
+// var active = confirm("would you like a active pet");
+// if (active == true && allergic == false) pet = "dog";
+// else if (active == false && allergic == false) pet = "cat";
+// else pet = "fish";
+// alert("try a " + pet);
 // If they are allergic, ask if they want a cute pet, store in a boolean variable with OK/Cancel
 // If they are not allergic, ask if they want to be outdoors with their pet.  Store it in a boolean with OK/Cancel.
 // If allergic and cute, pet =  bird
@@ -22,3 +22,19 @@ alert("try a " + pet);
 // Display the type of pet: You would do well with a pet
 // Ask for a pet name for the pet starting with the same letter as the pet starts with
 // Display petname the pet says hi. 
+var pet = "";
+var allergic = confirm(" are you allergic?");
+if (allergic == true) {
+  var cute = confirm(" cute [ok] or creepy [cancel]?");
+  if (cute == true)  pet = "bird";
+  else pet = "snake";
+}
+else {
+  var outside = confirm("outside [ok] or inside [cancel] pet?");
+  if (outside == true) pet = "dog";
+  else pet = "cat";
+}
+alert("try a " + pet);
+// var cute = confirm("cute [ok] or creepy [cancel]?");
+// if (cute == true) pet = "hampster";
+// else pet = "rat";
